@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              wiggle: 'wiggle 1s ease-in-out infinite',
+            },
+            keyframes: {
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <title>Learn | Tailwindcss</title>
+    <link rel="shortcut icon" href="/img/tailwind.svg" type="image/x-icon" />
+    <style type="text/tailwindcss">
+      #toggle:checked ~label div.toggle-circle {
+        @apply translate-x-3;
+      }
+    </style>
+    <style>
+      .font-Inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-slate-200">
+    <!-- <h1 class="text-3xl mb-2">Belajar <span class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+    <section class="mb-10 bg-gradient-to-br from-indigo-400 via-pink-200 to-purple-300">
+      <h2>Spacing</h2>
+      <div class="m-5 text-center">Margin</div>
+      <div class="p-4 text-center">Padding</div>
+    </section>
+
+    <section class="mb-10">
+      <h2>Sizing</h2>
+      <div class="w-32 h-32 text-center">Kotak 1</div>
+    </section> -->
+
+    <section class="mt-10 font-Inter max-w-3xl mx-auto">
+      <h2 class="mb-4 text-4xl font-semibold">
+        Belajar Mengenai Typography Pada Tailwindcss
+      </h2>
+
+      <div class="mb-2 text-gray-500">
+        By <a class="text-gray-700 font-semibold" href="#">Alham Manazil</a>, 24
+        April 2024
+      </div>
+
+      <p class="mb-4 text-lg">
+        Lorem ipsum dolor sit amet
+        <a class="underline font-medium text-blue-600" href="#">consectetur</a>
+        adipisicing elit. Vitae itaque ratione error vero incidunt voluptatem
+        ipsum facere soluta. Tempore porro consectetur repellendus adipisci,
+        incidunt laboriosam nostrum saepe et atque magnam.
+      </p>
+      <blockquote class="mb-4 italic font-light">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam
+        distinctio animi aperiam vel accusantium temporibus doloremque, optio in
+        tempore.""
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, esse
+        molestias! Temporibus, aliquam minus. Assumenda itaque porro voluptatem
+        omnis quod asperiores, quas nihil, eius incidunt eum aperiam,
+        repudiandae quam deserunt!
+      </p>
+    </section>
+
+    <!-- <div
+      class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-y-scroll bg-local"
+      style="
+        background-image: url(https://source.unsplash.com/1000x600?dark-painting);
+      "
+    > -->
+      <p class="p-5 text-2xl text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae,
+        itaque fugit repellendus doloremque nesciunt sunt, repudiandae magnam
+        laboriosam aliquam placeat nostrum quaerat quo ullam? Eos ratione
+        maiores obcaecati veritatis aliquam laborum, labore odio! Voluptatum
+        laborum deserunt rem quis, expedita obcaecati possimus dignissimos harum
+        laboriosam perferendis soluta provident in autem ut cumque commodi nihil
+        iusto, quas voluptate culpa dolorum similique exercitationem! Suscipit
+        animi eligendi enim nostrum tempore in ipsam. Saepe minima veritatis
+        tempore amet corporis cum nam reprehenderit eligendi iste optio beatae
+        ipsum neque esse quo repudiandae sed commodi, distinctio laborum
+        accusantium atque facilis rem incidunt. Corporis impedit molestiae sint
+        iusto, ipsa animi illum rem aut dolorem veritatis error, voluptatem modi
+        ad quaerat veniam assumenda culpa vel. Et dicta molestias doloribus
+        expedita a vel ab, inventore animi voluptates? Recusandae, perspiciatis
+        natus nobis, possimus alias autem sint illo neque placeat libero soluta!
+        Omnis inventore voluptatem numquam aliquid, suscipit, quasi neque enim
+        dolore reprehenderit ab reiciendis qui atque aut ducimus temporibus
+        facere? Magnam deserunt dolores totam reiciendis saepe vitae modi
+        laboriosam fuga aut nesciunt expedita nobis ullam itaque, nulla quam
+        facere alias, dolor corrupti voluptatem sint excepturi non sapiente.
+        Similique, explicabo aperiam voluptates architecto a dignissimos
+        reprehenderit. Quo reiciendis perferendis unde at.
+      </p>
+    </div>
+
+    <div
+      class="m-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-2xl shadow-slate-500 overflow-hidden border-8 flex"
+      style="background-image: url(/img/laptop.jpg)"
+    >
+    <div class="w-[200px] h-[200px] bg-white/30 m-auto rounded-full backdrop-blur-md"></div>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="flex justify-center">
+      <span class="text-sm text-slate-500 mr-2">Light</span>
+      <input type="checkbox" id="toggle" class="hidden">
+      <label for="toggle">
+        <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+        </div>
+      </label>
+      <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+    
+    <button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-Inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Simpan</button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-Inter hover:bg-sky-500 group font-serif dark:hover:bg-slate-300">
+
+      <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">My Card</h5>
+
+      <p class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolores perferendis repudiandae ex commodi, labore modi est similique, consequuntur in iure saepe nobis, possimus magni? Dignissimos ab quos error fuga.</p>
+    </div>
+
+    <div class="max-w-lg border-slate-200 rounded-xl mx-auto shadow-md font-Inter p-5">
+      <form action="">
+        <label for="email">
+
+          <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:ml-0.5 after:text-red-500">Email</span>
+
+          <input type="email" id="email" placeholder="masukkan email..." class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-700 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer">
+
+          <p class="text-sm m-1 text-red-700 invisible peer-invalid:visible">Email tidak valid</p>
+        </label>
+      </form>
+    </div>
+
+    <hr class="my-20">
+
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-45 hover:bg-indigo-300 transition origin-top-left"></div>
+
+    <div class="w-40 h-40 mx-auto mt-20 group">
+      <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 transition duration-700"></div>
+    </div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-40 animate-wiggle"></div>
+
+    <hr class="my-20 border-t-4">
+
+    <div class="container px-8 mx-auto">
+      <div class="border rounded-lg shadow-lg p-10 relative">
+        <div class="w-10 h-10 bg-sky-400 rounded-full flex fixed bottom-5 right-5  cursor-pointer"><a href="#" class="text m-auto">⬆️</a></div>
+        <img src="/img/man in silhouette.jpg" alt="man in silhouette" width="150" class="float-left mr-5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat ullam eum repellendus consequatur, dolor, neque dolore cum voluptate voluptates temporibus sequi ut amet voluptatem! Possimus, eum ipsum autem omnis nulla harum similique cupiditate beatae commodi enim quisquam voluptates minima quibusdam odit expedita. Minus quisquam labore earum maiores. Facere, voluptas!</p>
+      </div>
+    </div>
+
+    <div class="mb-96"></div>
+
+    <script>
+      const checkbox = document.querySelector('#toggle');
+      const html = document.querySelector('html');
+
+      checkbox.addEventListener('click', function() 
+      {
+        checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+      })
+    </script>
+  </body>
+</html>
