@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="css/style.css" rel="stylesheet">
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -31,11 +32,7 @@
     </script>
     <title>Learn | Tailwindcss</title>
     <link rel="shortcut icon" href="/img/tailwind.svg" type="image/x-icon" />
-    <style type="text/tailwindcss">
-      #toggle:checked ~label div.toggle-circle {
-        @apply translate-x-3;
-      }
-    </style>
+    <style type="text/tailwindcss"></style>
     <style>
       .font-Inter {
         font-family: "Inter", sans-serif;
@@ -162,20 +159,20 @@
 
     <hr class="my-20">
 
-    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-45 hover:bg-indigo-300 transition origin-top-left"></div>
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-120 hover:rotate-45 hover:bg-pink-300 transition origin-top-left"></div>
 
     <div class="w-40 h-40 mx-auto mt-20 group">
-      <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 transition duration-700"></div>
+      <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 hover:bg-lime-500 transition duration-700"></div>
     </div>
 
-    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-40 animate-wiggle"></div>
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg mt-20 animate-wiggle hover:animate-bounce hover:bg-indigo-400  duration-700"></div>
 
     <hr class="my-20 border-t-4">
 
     <div class="container px-8 mx-auto">
       <div class="border rounded-lg shadow-lg p-10 relative">
         <div class="w-10 h-10 bg-sky-400 rounded-full flex fixed bottom-5 right-5  cursor-pointer"><a href="#" class="text m-auto">⬆️</a></div>
-        <img src="/img/man in silhouette.jpg" alt="man in silhouette" width="150" class="float-left mr-5">
+        <img src="/img/man in silhouette.jpg" alt="man in silhouette" width="150" class="float-left mr-5 rounded-lg">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat ullam eum repellendus consequatur, dolor, neque dolore cum voluptate voluptates temporibus sequi ut amet voluptatem! Possimus, eum ipsum autem omnis nulla harum similique cupiditate beatae commodi enim quisquam voluptates minima quibusdam odit expedita. Minus quisquam labore earum maiores. Facere, voluptas!</p>
       </div>
     </div>
@@ -215,7 +212,7 @@
     <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
       
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-        <img src="/img/man in silhouette.jpg" alt="image" width="400" class="w-full">
+        <img src="https://source.unsplash.com/1280x720?laptop&t=1" alt="image" width="400" class="w-full">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
         <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
@@ -223,7 +220,7 @@
       </div>
 
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-        <img src="/img/man in silhouette.jpg" alt="image" width="400" class="w-full">
+        <img src="https://source.unsplash.com/1280x720?laptop&t=2" alt="image" width="400" class="w-full">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
         <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
@@ -231,7 +228,7 @@
       </div>
 
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-        <img src="/img/man in silhouette.jpg" alt="image" width="400" class="w-full">
+        <img src="https://source.unsplash.com/1280x720?laptop&t=3" alt="image" width="400" class="w-full">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
         <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
@@ -239,7 +236,7 @@
       </div>
 
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-        <img src="/img/man in silhouette.jpg" alt="image" width="400" class="w-full">
+        <img src="https://source.unsplash.com/1280x720?laptop&t=4" alt="image" width="400" class="w-full">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
         <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
@@ -247,14 +244,71 @@
       </div>
 
       <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 sm:mb-0 md:w-80 lg:w-72">
-        <img src="/img/man in silhouette.jpg" alt="image" width="400" class="w-full">
+        <img src="https://source.unsplash.com/1280x720?laptop&t=5" alt="image" width="400" class="w-full">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
         <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo.</p>
       </div>
       </div>
-
     </div>
+
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 ">
+
+      <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"> <span class="self-center">Welcome to my gallery</span></h2>
+      <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@alhammanazil</span></div>
+
+      <!-- Gambar-1 -->
+      <div class="group grid-card">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=1')]"></div>
+      </div>
+
+      <!-- Gambar 2 -->
+      <div class="group grid-card md:col-start-3">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=2')]"></div>
+      </div>
+
+      <!-- Gambar 3 -->
+      <div class="group grid-card">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=3')]"></div>
+      </div>
+
+      <!-- Gambar 4 -->
+      <div class="group grid-card">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=4')]"></div>
+      </div>
+
+      <!-- Gambar 5 -->
+      <div class="group grid-card">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=5')]"></div>
+      </div>
+
+      <!-- Gambar 6 -->
+      <div class="group grid-card md:col-start-2">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=6')]"></div>
+      </div>
+      
+      <!-- Gambar 7 -->
+      <div class="group grid-card md:col-start-4">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=7')]"></div>
+      </div>
+
+      <!-- Gambar 8 -->
+      <div class="group grid-card">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=8')]"></div>
+      </div>
+
+      <!-- Gambar 9 -->
+      <div class="group grid-card md:col-start-3">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=9')]"></div>
+      </div>
+      
+      <!-- Gambar 10 -->
+      <div class="group grid-card md:col-start-3">
+        <div class="grid-card-image  bg-[url('https://source.unsplash.com/640x480?painting&t=10')]"></div>
+      </div>
+    </div>
+
+    <h1 class="mt-20">Hello World</h1>
 
     <div class="mb-96">
     </div>
